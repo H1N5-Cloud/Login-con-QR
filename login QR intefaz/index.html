@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login con QR</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="">
+      <h1>Iniciar Sesión</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Usuario" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Contraseña" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Recuerdame</label>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+      <button type="submit" class="btn">iniciar Sesión</button>
+      <div class="register-link">
+        <p>¿No tienes una cuenta? <a style="color: #e0d914;" href="#">Registrar</a></p>
+      </div>
+
+        <!-- Sección de QR Login -->
+        <div>
+  <button type="submit" class="btn2" onclick="window.location.href='qr-login.html'">Iniciar sesión con código QR</button>
+  </div>
+<!-- Botón para Generar Código QR -->
+<div>
+  <button type="button" class="btn2" style="background-color: rgba(232, 144, 29, 0.298); color: rgb(255, 255, 255); border: 2px solid #9ba05216; padding: 8px 10px; margin-top: 10px; border-radius: px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);" onclick="window.location.href='generar.html'">Generar Código QR</button>
+</div>
+
+<div class="social-login" style="text-align: center; margin-top: 20px;">
+  <p style="margin: 10px 0;">Iniciar sesión con:</p>
+  <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Des&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Des&hl=es&ifkv=ARpgrqdgjFrZhfLwmBSX5wNAagomRIh3QpzgXhAUv5YHxWr_LbT1aWWNSGTLUDt7LRsT0HFsBdCp&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-835110301%3A1727578585094697&ddm=1" style="margin: 0 10px;">
+      <img src="/imagenes/google.png" alt="Iniciar sesión con Google" style="width: 32px; height: 32px;">
+  </a>
+  <a href="https://es-la.facebook.com/login/device-based/regular/login/" style="margin: 0 10px;">
+      <img src="/imagenes/facebook.png" alt="Iniciar sesión con Facebook" style="width: 32px; height: 32px;">
+  </a>
+  <a href="https://github.com/login" style="margin: 0 10px;">
+    <img src="/imagenes/github-2.png" alt="Iniciar sesión con Facebook" style="width: 32px; height: 32px;">
+</a>
+ 
+</div>
+
+    </form>
+  </div>
+</body>
+</html>

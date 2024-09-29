@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generar Código QR</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <!-- boton xd -->
+<div class="nav-button">
+<a href="index.html">
+<img src="/imagenes/close-icon.png" alt="Cerrar" style="width: 24px; height: 24px;">
+</a>
+</div>
+
+  <div class="wrapper">
+    <form action="">
+      <h1>Generar Código QR</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Usuario" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Contraseña" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <button type="button" class="btn" onclick="generateQR()">Generar QR</button>
+
+      <!-- Espacio para mostrar el QR generado (puedes sustituir con la imagen QR que tengas) -->
+      <div class="qr-placeholder">
+        <img src="/imagenes/QR ejemplo.png" alt="Código QR generado" id="qrImage" style="display:none; margin-top: 20px; width: 200px;">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function generateQR() {
+      // Aquí puedes poner el código JS para generar el QR
+      document.getElementById('qrImage').style.display = 'block'; // Muestra la imagen del QR
+    }
+  </script>
+</body>
+</html>
